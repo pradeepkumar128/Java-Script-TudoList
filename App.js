@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
      var taskText = taskInput.value.trim();
  
      if (taskText === "") {
-         alert("Please enter a task!");
+         Swal.fire({
+             icon: 'error',
+             title: 'Oops...',
+             text: 'Please Enter a task !',
+         });
          return;
      }
  
